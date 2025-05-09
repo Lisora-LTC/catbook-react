@@ -5,3 +5,49 @@
  * .<old style> --> .<Component>-<style-name>
  * 
  */
+
+/* NavBar 组件样式，基于 old_styles.css 迁移并重命名 */
+
+.NavBar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0683ff;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.NavBar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.NavBar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.NavBar-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.NavBar-link:hover {
+  color: #007bff;
+}
+
+.NavBar-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 1rem;
+  border: 2px solid #eee;
+}
+
+/* 可根据需要继续添加其他样式 */
