@@ -21,7 +21,9 @@ const Profile = () => {
         </div>
         <div className="Profile-subContainer u-textCenter">
           <h4 className="Profile-subTitle">CatHappiness</h4>
-          <CatHappiness catHappiness={catHappiness} />
+          <CatHappiness 
+            catHappiness={catHappiness} 
+          />
         </div>
         <div className="Profile-subContainer u-textCenter">
           <h4 className="Profile-subTitle">My Favorite Type of Cat</h4>
