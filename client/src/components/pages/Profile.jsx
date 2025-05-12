@@ -5,10 +5,15 @@ import CatHappiness from "../modules/CatHappiness.jsx";
 
 const Profile = () => {
   const [catHappiness, setCatHappiness] = useState(0);
+  const incrementCatHappiness = () => {
+    setCatHappiness(catHappiness+1);
+    // TODO Step 2a: Implement function to update the state of cat happiness when user clicks on picture
+  };
   return (
     <div>
+      {/* TODO Step 2b: Call incrementCatHappiness whenever the profile picture is clicked */}
       <div className="Profile-avatarContainer">
-        <div className="Profile-avatar" />
+        <div className="Profile-avatar" onClick={incrementCatHappiness}/>
       </div>
       <h1 className="Profile-name u-textCenter">Lisora</h1>
       <hr className="Profile-line" />
