@@ -10,11 +10,11 @@ import React from "react";
  * @param {string} creator_name
  * @param {string} content of the story
  */
-const SingleStory = () => {
+const SingleStory = (props) => {
   return (
     <div className="Card-story">
+      <h1>{props.Nickname}</h1>
       This is a SingleStory!
-      {/* TODO (step1): use JSX and props to render story creator and content */}
     </div>
   );
 };

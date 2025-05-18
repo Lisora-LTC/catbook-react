@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from "react";
+import SingleStory from "../modules/SingleStory";
 // TODO (step1): import SingleStory
 // TODO (step4): import NewStory
 // TODO (step6): remove SingleStory import, import Card
 
-const Feed = () => {
+const Feed = (props) => {
   // TODO (step2): define state called "stories" to hold stories
 
   // TODO (step4): implement a callback function addNewStory that adds a 
@@ -21,8 +22,14 @@ const Feed = () => {
 
   }, []);
 
-  return <div>This is the feed!</div>;
+  //return <div>This is the feed!111</div>;
+  return (
+    <>
+      <SingleStory Nickname={props.NickName}/>
+    </>
+  );
   // TODO (step1): render a SingleStory with hardcoded props
+  // <h1>{props.NickName}</h1>
   // TODO (step2): render the raw stories data from state--use JSON.stringify(*list*)
   // TODO (step3): map the state to SingleStory components
   // TODO (step4): add in the NewStory component and pass down addStory as a prop
